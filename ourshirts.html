@@ -1,0 +1,164 @@
+<link rel="stylesheet" href="http://www.mangotee.org/wp-content/themes/flipflop/jquery-ui-1.11.4/jquery-ui.css">
+<script src="http://www.mangotee.org/wp-content/themes/flipflop/jquery-ui-1.11.4/external/jquery/jquery.js"></script>
+<script src="http://www.mangotee.org/wp-content/themes/flipflop/jquery-ui-1.11.4/jquery-ui.js"></script>
+<script>
+jQuery(document).ready(function() {
+//SHORT SLEEVES  
+//default, Ash color is shown
+jQuery("#selected-color").attr("src","http://www.mangotee.org/wp-content/uploads/2015/12/CL050Ash.png");
+   jQuery( "#colorShort" ).selectable({
+      selected: function (event, ui) {
+         var variable = ui.selected.innerHTML;
+         console.log(variable);
+         var colorElegido= "http://www.mangotee.org/wp-content/uploads/2015/12/CL050"+variable+".png";
+         console.log("colorElegido: "+ colorElegido);
+          jQuery("#selected-color").attr("src", colorElegido);
+          }
+   });
+//LONG SLEEVES  
+//default, SAPPHIRE color is shown
+jQuery("#LGselected-color").attr("src","http://www.mangotee.org/wp-content/uploads/2015/12/CL110Sapphire.png");
+   jQuery( "#colorLG" ).selectable({
+      selected: function (event, ui) {
+         var variable = ui.selected.innerHTML;
+         console.log(variable);
+         var colorElegido= "http://www.mangotee.org/wp-content/uploads/2015/12/CL110"+variable+".png";
+         console.log("colorElegido1: "+ colorElegido);
+          jQuery("#LGselected-color").attr("src", colorElegido);
+          }
+   });
+//SWEATER
+//default, RED color is shown
+jQuery("#sweater").attr("src","http://www.mangotee.org/wp-content/uploads/2015/12/18000Red.png")
+   jQuery( "#colorSW" ).selectable({
+      selected: function (event, ui) {
+         var variable = ui.selected.innerHTML;
+         console.log(variable);
+         var colorElegido= "http://www.mangotee.org/wp-content/uploads/2015/12/18000"+variable+".png";
+         console.log("colorElegido2: "+ colorElegido);
+          jQuery("#sweater").attr("src", colorElegido);
+          }
+   });
+});
+</script>  
+<div class="columns-container"><!--BEGINING-SHORT SLEEVES-->
+<div class="two-columns">
+<div style="text-align:left;">
+<h2 class="colors">Short Sleeve T-Shirt</h2>
+<strong> Price with color design - <span class="colors"> $7 per T-shirt</span>  </strong> 
+<strong>Price with B/W design -<span class="colors"> $6 per T-shirt</span> </strong>
+
+<strong>Style </strong>Gildan G5000 Heavy Cotton. 
+&nbsp;
+<strong>Description </strong>
+Our best-selling lighterweight Gildan jersey tee. 
+Preshrunk 100% cotton jersey knit (blended cotton/polyester in antique and heather and neon and safety colors). 5.3 oz. Seamless double-needle 7/8" collar. Taped neck and shoulders. Double-needle sleeve and bottom hems. Quarter-turned to eliminate center crease.
+
+<strong>Sizes</strong> 
+<div>
+<span class="tallas">S</span> <span class="tallas">M</span><span class="tallas">L</span><span class="tallas">XL</span><span class="tallas">2XL</span><span class="tallas">3XL</span><span class="tallas">4XL</span><span class="tallas">5XL</span>
+</div>
+&nbsp;
+<strong>Colores</strong>
+
+<ol id="colorShort" class="colortype">
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/ash.png'); background-repeat: no-repeat; position:center" class="ui-state-default">Ash</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/black.png'); background-repeat: no-repeat; position:center" class="ui-state-default">Black</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/daisy.png'); background-repeat: no-repeat; position:center" class="ui-state-default">Daisy</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/helconia.png'); background-repeat: no-repeat; position:center" class="ui-state-default">Helconia</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/kellly.png'); background-repeat: no-repeat; position:center" class="ui-state-default">Kelly</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/lime.png'); background-repeat: no-repeat; position:center" class="ui-state-default">Lime</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/navy.png'); background-repeat: no-repeat; position:center" lass="ui-state-default">Navy</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/orange.png'); background-repeat: no-repeat; position:center" class="ui-state-default">Orange</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/purple.png'); background-repeat: no-repeat; position:center"  class="ui-state-default">Purple</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/red.png'); background-repeat: no-repeat; position:center"  class="ui-state-default">Red</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/royal.png'); background-repeat: no-repeat; position:center"  class="ui-state-default">Royal</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/sapphire.png'); background-repeat: no-repeat; position:center"  class="ui-state-default">Sapphire</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/white.png'); background-repeat: no-repeat; position:center"  class="ui-state-default">White</li>
+</ol>
+</div> <!--to align to the left -->
+</div><!--end two-columns -->
+<div class="two-columns">
+
+<img id="selected-color" src="" alt="" width="550" height="525" class="aligncenter size-full"/>
+
+</div><!--end two-columns -->
+
+</div><!--END columns-SHORT SLEEVES-->
+<div style="clear: both;"></div>
+
+<div class="columns-container"><!--BEGINING-LONG SLEEVES-->
+<div class="two-columns">
+<div style="text-align:left;">
+<h2 class="colors">Long Sleeve T-Shirt</h2>
+<strong> Price with color design - <span class="colors">$11 per T-shirt</span>  </strong> 
+<strong> Price with B/W design - <span class="colors">$10 per T-shirt</span>  </strong> 
+
+<strong>Style </strong>Gildan G2400 Ultra Cotton. 
+&nbsp;
+<strong>Description </strong>
+Preshrunk 100% cotton jersey knit (blended cotton/polyester in heather and safety colors). 6 oz. Seamless double-needle 7/8" collar. Taped neck and shoulders. Ribbed cuffs. Double-needle bottom hem. Quarter-turned to eliminate center crease.
+
+<strong>Sizes</strong> 
+<div><span class="tallas">S</span> <span class="tallas">M</span><span class="tallas">L</span><span class="tallas">XL</span><span class="tallas">2XL</span><span class="tallas">3XL</span><span class="tallas">4XL</span><span class="tallas">5XL</span>
+</div>
+&nbsp;
+<strong>Colores</strong>
+</div> <!--to align to the left -->
+
+<ol id="colorLG" class="colortype">
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/ash.png'); background-repeat: no-repeat; position:center" class="ui-state-default">Ash</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/black.png'); background-repeat: no-repeat; position:center" class="ui-state-default">Black</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/navy.png'); background-repeat: no-repeat; position:center" lass="ui-state-default">Navy</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/purple.png'); background-repeat: no-repeat; position:center"  class="ui-state-default">Purple</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/red.png'); background-repeat: no-repeat; position:center"  class="ui-state-default">Red</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/royal.png'); background-repeat: no-repeat; position:center"  class="ui-state-default">Royal</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/sapphire.png'); background-repeat: no-repeat; position:center"  class="ui-state-default">Sapphire</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/white.png'); background-repeat: no-repeat; position:center"  class="ui-state-default">White</li>
+</ol>
+</div><!--end two-columns -->
+<div class="two-columns">
+
+<img id="LGselected-color" src="" alt="" width="550" height="525" class="aligncenter size-full"/>
+
+</div><!--end two-columns -->
+
+
+</div><!--END columns-LONG SLEEVES-->
+<div style="clear: both;"></div>
+
+<div class="columns-container"><!--BEGINING-SWEATER SLEEVES-->
+<div class="two-columns">
+<div style="text-align:left;">
+<h2 class="colors">Sweatshirt</h2>
+<strong> Price with color design - <span class="colors"> $13 per T-shirt</span>  </strong> 
+<strong>Price with B/W design -<span class="colors"> $12 per T-shirt</span> </strong>
+
+<strong>Style </strong>Gildan 12000 Crew Neck Sweatshirt. 
+&nbsp;
+<strong>Description </strong>
+Soft, moisture-wicking performance in a blended no-pill sweatshirt from the trusted Gildan brand. 
+Preshrunk 50% cotton/50% polyester fleece knit. 9.3 oz. DryBlend® technology delivers moisture-wicking properties. Air-jet yarn for softer feel and reduced pilling. 1x1 rib with spandex
+double-needle cuffs and waistband. Quarter-turned to eliminate center crease.
+
+<strong>Sizes</strong> 
+<div> <span class="tallas">S</span> <span class="tallas">M</span><span class="tallas">L</span><span class="tallas">XL</span><span class="tallas">2XL</span><span class="tallas">3XL</span>
+</div>
+&nbsp;
+<strong>Colores</strong>
+</div> <!--to align to the left -->
+<ol id="colorSW" class="colortype">
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/ash.png'); background-repeat: no-repeat; position:center" class="ui-state-default">Ash</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/royal.png'); background-repeat: no-repeat; position:center" class="ui-state-default">Royal</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/red.png'); background-repeat: no-repeat; position:center"  class="ui-state-default">Red</li>
+  <li style="background-image: url('http://www.mangotee.org/wp-content/uploads/2015/12/white.png'); background-repeat: no-repeat; position:center"  class="ui-state-default">White</li>
+</ol>
+</div>
+<!--end two-columns -->
+<div class="two-columns">
+
+<img id="sweater" src="" alt="" width="550" height="525" class="aligncenter size-full"/>
+</div><!--end two-columns -->
+
+</div><!--end two-columns SWEATER -->
+<div style="clear: both;"></div>
